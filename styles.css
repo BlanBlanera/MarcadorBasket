@@ -1,0 +1,24 @@
+:root { font-family: system-ui, sans-serif; color: #f9fafb; background: #111827; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.app { max-width: 760px; margin: auto; padding: 20px 14px 36px; }
+header { text-align: center; margin-bottom: 24px; }
+h1 { font-size: 1.65rem; margin: 8px 0; }
+header p, .hint { color: #aeb9ca; }
+.period { text-align: center; background: #1f2937; border-radius: 18px; padding: 16px; margin-bottom: 16px; }
+.period h2 { margin: 0 0 12px; font-size: 1.2rem; }
+.period-buttons { display: flex; justify-content: center; gap: 12px; }
+.scoreboard { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.team { text-align: center; background: #1f2937; padding: 18px 10px; border-radius: 18px; min-width: 0; }
+.team h2 { font-size: clamp(1rem, 4vw, 1.4rem); min-height: 2.7em; display: grid; place-items: center; margin: 0; }
+output { display: block; font-size: clamp(3.8rem, 14vw, 6.5rem); font-weight: 800; font-variant-numeric: tabular-nums; margin: 6px 0 16px; }
+button { border: 0; border-radius: 12px; background: #f59e0b; color: #111827; font: inherit; font-weight: 750; cursor: pointer; min-height: 48px; padding: 10px; }
+button:active { transform: scale(.97); }
+button:disabled { opacity: .35; cursor: not-allowed; }
+.point-buttons { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px; }
+.point-buttons button { padding: 8px 0; font-size: 1.1rem; }
+.secondary, .undo { background: #374151; color: #f9fafb; }
+.undo { width: 100%; margin-top: 12px; font-size: .78rem; line-height: 1.25; min-height: 54px; }
+.reset { display: block; margin: 25px auto 12px; background: transparent; color: #fca5a5; border: 1px solid #f87171; }
+.hint { text-align: center; font-size: .8rem; }
+@media (max-width: 370px) { .app { padding-inline: 8px; } .scoreboard { gap: 8px; } .team { padding-inline: 6px; } .period-buttons { gap: 7px; } }

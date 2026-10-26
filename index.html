@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <title>Marcador Basket</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header><h1>🏀 Marcador Basket</h1><p>6 periodos de 8 minutos · Sin cronómetro</p></header>
+    <section class="period" aria-label="Periodo del partido">
+      <h2>Periodo <span id="period-number">1</span> de 6</h2>
+      <div class="period-buttons">
+        <button id="previous-period" class="secondary">← Anterior</button>
+        <button id="next-period" class="secondary">Siguiente →</button>
+      </div>
+    </section>
+    <section class="scoreboard" aria-label="Marcador">
+      <article class="team">
+        <h2>San Agustín</h2>
+        <output id="score-san" aria-label="Puntos de San Agustín">0</output>
+        <div class="point-buttons">
+          <button data-team="san" data-points="1">+1</button>
+          <button data-team="san" data-points="2">+2</button>
+          <button data-team="san" data-points="3">+3</button>
+        </div>
+        <button class="undo" data-undo="san">↶ Deshacer última anotación</button>
+      </article>
+      <article class="team">
+        <h2>Los Otros</h2>
+        <output id="score-otros" aria-label="Puntos de Los Otros">0</output>
+        <div class="point-buttons">
+          <button data-team="otros" data-points="1">+1</button>
+          <button data-team="otros" data-points="2">+2</button>
+          <button data-team="otros" data-points="3">+3</button>
+        </div>
+        <button class="undo" data-undo="otros">↶ Deshacer última anotación</button>
+      </article>
+    </section>
+    <button id="reset" class="reset">Reiniciar partido</button>
+    <p class="hint">Los puntos y el periodo se guardan automáticamente en este dispositivo.</p>
+  </main>
+</body>
+</html>
