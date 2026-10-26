@@ -22,3 +22,13 @@ button:disabled { opacity: .35; cursor: not-allowed; }
 .reset { display: block; margin: 25px auto 12px; background: transparent; color: #fca5a5; border: 1px solid #f87171; }
 .hint { text-align: center; font-size: .8rem; }
 @media (max-width: 370px) { .app { padding-inline: 8px; } .scoreboard { gap: 8px; } .team { padding-inline: 6px; } .period-buttons { gap: 7px; } }
+
+.breakdown { margin-top: 18px; background: #1f2937; border-radius: 18px; padding: 16px; }
+.breakdown h2 { font-size: 1.15rem; margin: 0 0 5px; }
+.breakdown-note { color: #aeb9ca; font-size: .8rem; margin: 0 0 12px; }
+table { width: 100%; border-collapse: collapse; text-align: center; font-variant-numeric: tabular-nums; }
+th, td { padding: 9px 5px; border-bottom: 1px solid #374151; }
+thead th { font-size: .8rem; color: #cbd5e1; }
+tbody tr.selected { background: #374151; }
+tbody tr { cursor: pointer; }
+tfoot th, tfoot td { font-weight: 800; border-bottom: none; }

@@ -10,7 +10,7 @@
 </head>
 <body>
   <main class="app">
-    <header><h1>🏀 Marcador Basket</h1><p>6 periodos de 8 minutos </p></header>
+    <header><h1>🏀 Marcador Basket</h1><p>6 periodos de 8 minutos · Sin cronómetro</p></header>
     <section class="period" aria-label="Periodo del partido">
       <h2>Periodo <span id="period-number">1</span> de 6</h2>
       <div class="period-buttons">
@@ -40,8 +40,17 @@
         <button class="undo" data-undo="otros">↶ Deshacer última anotación</button>
       </article>
     </section>
+    <section class="breakdown" aria-label="Puntos por periodo">
+      <h2>Puntuación por periodo</h2>
+      <p class="breakdown-note">El periodo seleccionado se puede editar con los botones de arriba.</p>
+      <table>
+        <thead><tr><th>Periodo</th><th>San Agustín</th><th>Los Otros</th></tr></thead>
+        <tbody id="period-rows"></tbody>
+        <tfoot><tr><th>Total</th><td id="total-san">0</td><td id="total-otros">0</td></tr></tfoot>
+      </table>
+    </section>
     <button id="reset" class="reset">Reiniciar partido</button>
-    <p class="hint">Los puntos y el periodo se guardan automáticamente en este dispositivo.</p>
+    <p class="hint">Los puntos de cada periodo se guardan automáticamente en este dispositivo.</p>
   </main>
 </body>
 </html>
